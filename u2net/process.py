@@ -16,15 +16,15 @@ import glob
 from PIL import Image
 import os
 
-from data_loader import Rescale
-from data_loader import RescaleT
-from data_loader import RandomCrop
-from data_loader import ToTensor
-from data_loader import ToTensorLab
-from data_loader import SalObjDataset
+from u2net.data_loader import Rescale
+from u2net.data_loader import RescaleT
+from u2net.data_loader import RandomCrop
+from u2net.data_loader import ToTensor
+from u2net.data_loader import ToTensorLab
+from u2net.data_loader import SalObjDataset
 
-from model import U2NET
-from model import U2NETP
+from u2net.model import U2NET
+from u2net.model import U2NETP
 
 # ------- 1. define loss function --------
 
