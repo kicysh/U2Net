@@ -91,6 +91,7 @@ def training_process(
         net,
         salobj_dataloader,
         optimizer = None,
+        save_model_dir = "/path/to/model_weights/",
         is_use_cuda = torch.cuda.is_available(),
         epoch_num = 100000,
         batch_size_train = 12,
@@ -148,7 +149,7 @@ def training_process(
     
             if ite_num % save_frq == 0:
     
-                torch.save(net.state_dict(), model_dir +"model_weight_bce_itr_%d_train_%3f_tar_%3f.pth" % (ite_num, running_loss / ite_num4val, running_tar_loss / ite_num4val))
+                torch.save(net.state_dict(), save_model_dir+"model_weight_bce_itr_%d_train_%3f_tar_%3f.pth" % (ite_num, running_loss / ite_num4val, running_tar_loss / ite_num4val))
                 running_loss = 0.0
                 running_tar_loss = 0.0
                 net.train()  # resume train
