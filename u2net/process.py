@@ -189,6 +189,7 @@ def save_output(image_name,pred,d_dir):
 
 
 def predict_process(
+    net,
     is_use_cuda = torch.cuda.is_available(),
     image_dir = os.path.join(os.getcwd(), 'test_data', 'test_images'),
     prediction_dir = "/path/to/pred_dir/",
