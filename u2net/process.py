@@ -196,7 +196,7 @@ def predict_process(
     prediction_dir = "/path/to/pred_dir/",
     model_dir = '/path/to/saved_model.pth',
     ):
-    img_name_list = glob.glob(image_dir + os.sep + '*'),
+    img_name_list = glob.glob(image_dir + os.sep + '*')
     
     print(img_name_list)
 
