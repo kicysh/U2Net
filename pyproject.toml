@@ -1,6 +1,6 @@
 [project]
 name = "u2net"
-version = "0.1"
+version = "0.2"
 
 [tool.setuptools]
 package-dir = {"" = "u2net"}
